@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/utility.css" />
+  </head>
+  <body>
+    <div class="container flex">
+      <div class="left bg-black">
+        <div class="home bg-grey rounded m-1 p-1">
+          <div class="close">
+            <img class="invert closeIcon" src="./svg/close.svg" alt="" />
+          </div>
+          <div class="logo">
+            <img class="invert" src="./svg/logo.svg" alt="" />
+            <span>Spotify</span>
+          </div>
+          <ul>
+            <li>
+              <img class="svg invert" src="./svg/home.svg" alt="home" />Home
+            </li>
+            <li>
+              <img
+                class="svg invert"
+                src="./svg/search.svg"
+                alt="search"
+              />Search
+            </li>
+          </ul>
+        </div>
+        <div class="library bg-grey rounded m-1 p-1">
+          <div class="heading">
+            <img class="invert" src="./svg/playlist.svg" alt="" />
+            <h3>Your library</h3>
+          </div>
+          <div class="songList">
+            <ul>
+              <!-- Songs will be appended here -->
+            </ul>
+          </div>
+
+          <div class="footer">
+            <a href="https://www.spotify.com/in-en/legal/"
+              ><span>Legal</span></a
+            >
+            <a href="https://www.spotify.com/in-en/safetyandprivacy/"
+              ><span>Safety & Privacy Center</span></a
+            >
+            <a href="https://www.spotify.com/in-en/legal/privacy-policy/"
+              ><span>Privacy Policy</span></a
+            >
+            <a href="https://www.spotify.com/in-en/legal/cookies-policy/"
+              ><span>Cookies</span></a
+            >
+            <a href="https://www.spotify.com/in-en/legal/privacy-policy/#s3"
+              ><span>About Ads</span></a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="right bg-grey rounded">
+        <div class="header rounded">
+          <div class="nav">
+            <div class="hamburgerIcon">
+              <img class="invert hamburger" src="./svg/hamburger.svg" alt="" />
+              <img class="leftArrow" src="./svg/left.svg" alt="" />
+              <img class="rightArrow" src="./svg/right.svg" alt="" />
+            </div>
+          </div>
+          <div class="buttons flex">
+            <button class="SignupBtn">Sign up</button>
+            <button class="LoginBtn">Log in</button>
+          </div>
+        </div>
+        <div class="spotifyPlaylist">
+          <h2>Spotify Playlist</h2>
+          <div class="cartContainer">
+            <div data-folder="Liked" class="card">
+              <div class="play">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 36 36"
+                  width="36"
+                  height="36"
+                  class="my-svg"
+                >
+                  <circle cx="18" cy="18" r="16" />
+                  <path
+                    d="M24.8906 18.846C24.5371 20.189 22.8667 21.138 19.5257 23.0361C16.296 24.8709 14.6812 25.7884 13.3798 25.4196C12.8418 25.2671 12.3516 24.9776 11.9562 24.5787C11 23.6139 11 21.7426 11 18C11 14.2574 11 12.3861 11.9562 11.4213C12.3516 11.0225 12.8418 10.7329 13.3798 10.5804C14.6812 10.2116 16.296 11.1291 19.5257 12.9639C22.8667 14.862 24.5371 15.811 24.8906 17.154C25.0365 17.7084 25.0365 18.2916 24.8906 18.846Z"
+                  />
+                </svg>
+              </div>
+              <img
+                src="https://i.scdn.co/image/ab67616d00001e025f3ede47954a93aa03efe5f9"
+                alt=""
+              />
+              <h3>Liked Playlist</h3>
+              <p>The very best in new music fro...</p>
+            </div>
+            <div data-folder="Hindi" class="card">
+              <div class="play">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 36 36"
+                  width="36"
+                  height="36"
+                  class="my-svg"
+                >
+                  <circle cx="18" cy="18" r="16" />
+                  <path
+                    d="M24.8906 18.846C24.5371 20.189 22.8667 21.138 19.5257 23.0361C16.296 24.8709 14.6812 25.7884 13.3798 25.4196C12.8418 25.2671 12.3516 24.9776 11.9562 24.5787C11 23.6139 11 21.7426 11 18C11 14.2574 11 12.3861 11.9562 11.4213C12.3516 11.0225 12.8418 10.7329 13.3798 10.5804C14.6812 10.2116 16.296 11.1291 19.5257 12.9639C22.8667 14.862 24.5371 15.811 24.8906 17.154C25.0365 17.7084 25.0365 18.2916 24.8906 18.846Z"
+                  />
+                </svg>
+              </div>
+              <img
+                src="https://i.scdn.co/image/ab67616d00001e02ce1f4349305971b5beb75fcd"
+                alt=""
+              />
+              <h3>Hindi Playlist</h3>
+              <p>The very best in new music fro...</p>
+            </div>
+            <div data-folder="Telugu" class="card">
+              <div class="play">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 36 36"
+                  width="36"
+                  height="36"
+                  class="my-svg"
+                >
+                  <circle cx="18" cy="18" r="16" />
+                  <path
+                    d="M24.8906 18.846C24.5371 20.189 22.8667 21.138 19.5257 23.0361C16.296 24.8709 14.6812 25.7884 13.3798 25.4196C12.8418 25.2671 12.3516 24.9776 11.9562 24.5787C11 23.6139 11 21.7426 11 18C11 14.2574 11 12.3861 11.9562 11.4213C12.3516 11.0225 12.8418 10.7329 13.3798 10.5804C14.6812 10.2116 16.296 11.1291 19.5257 12.9639C22.8667 14.862 24.5371 15.811 24.8906 17.154C25.0365 17.7084 25.0365 18.2916 24.8906 18.846Z"
+                  />
+                </svg>
+              </div>
+              <img
+                src="https://i.scdn.co/image/ab67616d0000b273723c541e574b10a500d22e4d"
+                alt=""
+              />
+              <h3>Telugu Playlist</h3>
+              <p>Playlist:Ganesh</p>
+            </div>
+            <div data-folder="English" class="card">
+              <div class="play">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 36 36"
+                  width="36"
+                  height="36"
+                  class="my-svg"
+                >
+                  <circle cx="18" cy="18" r="16" />
+                  <path
+                    d="M24.8906 18.846C24.5371 20.189 22.8667 21.138 19.5257 23.0361C16.296 24.8709 14.6812 25.7884 13.3798 25.4196C12.8418 25.2671 12.3516 24.9776 11.9562 24.5787C11 23.6139 11 21.7426 11 18C11 14.2574 11 12.3861 11.9562 11.4213C12.3516 11.0225 12.8418 10.7329 13.3798 10.5804C14.6812 10.2116 16.296 11.1291 19.5257 12.9639C22.8667 14.862 24.5371 15.811 24.8906 17.154C25.0365 17.7084 25.0365 18.2916 24.8906 18.846Z"
+                  />
+                </svg>
+              </div>
+              <img
+                src="https://i.scdn.co/image/ab67616d0000b2736ca5c90113b30c3c43ffb8f4"
+                alt=""
+              />
+              <h3>English Playlist</h3>
+              <p>The very best in new music fro...</p>
+            </div>
+            <div data-folder="Ilayaraja" class="card">
+              <div class="play">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 36 36"
+                  width="36"
+                  height="36"
+                  class="my-svg"
+                >
+                  <circle cx="18" cy="18" r="16" />
+                  <path
+                    d="M24.8906 18.846C24.5371 20.189 22.8667 21.138 19.5257 23.0361C16.296 24.8709 14.6812 25.7884 13.3798 25.4196C12.8418 25.2671 12.3516 24.9776 11.9562 24.5787C11 23.6139 11 21.7426 11 18C11 14.2574 11 12.3861 11.9562 11.4213C12.3516 11.0225 12.8418 10.7329 13.3798 10.5804C14.6812 10.2116 16.296 11.1291 19.5257 12.9639C22.8667 14.862 24.5371 15.811 24.8906 17.154C25.0365 17.7084 25.0365 18.2916 24.8906 18.846Z"
+                  />
+                </svg>
+              </div>
+              <img
+                src="https://image-cdn-ak.spotifycdn.com/image/ab67706c0000da849bdc90a9ea04aaa63cbf6d76"
+                alt=""
+              />
+              <h3>Ilayaraja Playlist</h3>
+              <p>The very best in new music fro...</p>
+            </div>
+            <div data-folder="Harris-jayaraj" class="card">
+              <div class="play">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 36 36"
+                  width="36"
+                  height="36"
+                  class="my-svg"
+                >
+                  <circle cx="18" cy="18" r="16" />
+                  <path
+                    d="M24.8906 18.846C24.5371 20.189 22.8667 21.138 19.5257 23.0361C16.296 24.8709 14.6812 25.7884 13.3798 25.4196C12.8418 25.2671 12.3516 24.9776 11.9562 24.5787C11 23.6139 11 21.7426 11 18C11 14.2574 11 12.3861 11.9562 11.4213C12.3516 11.0225 12.8418 10.7329 13.3798 10.5804C14.6812 10.2116 16.296 11.1291 19.5257 12.9639C22.8667 14.862 24.5371 15.811 24.8906 17.154C25.0365 17.7084 25.0365 18.2916 24.8906 18.846Z"
+                  />
+                </svg>
+              </div>
+              <img
+                src="https://image-cdn-ak.spotifycdn.com/image/ab67706c0000da842fb05de84bf75df0a6764e65"
+                alt=""
+              />
+              <h3>Harris jayaraj Playlist</h3>
+              <p>The very best in new music fro...</p>
+            </div>
+            <div data-folder="DSP" class="card">
+              <div class="play">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 36 36"
+                  width="36"
+                  height="36"
+                  class="my-svg"
+                >
+                  <circle cx="18" cy="18" r="16" />
+                  <path
+                    d="M24.8906 18.846C24.5371 20.189 22.8667 21.138 19.5257 23.0361C16.296 24.8709 14.6812 25.7884 13.3798 25.4196C12.8418 25.2671 12.3516 24.9776 11.9562 24.5787C11 23.6139 11 21.7426 11 18C11 14.2574 11 12.3861 11.9562 11.4213C12.3516 11.0225 12.8418 10.7329 13.3798 10.5804C14.6812 10.2116 16.296 11.1291 19.5257 12.9639C22.8667 14.862 24.5371 15.811 24.8906 17.154C25.0365 17.7084 25.0365 18.2916 24.8906 18.846Z"
+                  />
+                </svg>
+              </div>
+              <img
+                src="https://i.scdn.co/image/ab67616100005174aa5350248841ba12e12467af"
+                alt=""
+              />
+              <h3>DSP Playlist</h3>
+              <p>The very best in new music fro...</p>
+            </div>
+            <div data-folder="Anirudh" class="card">
+              <div class="play">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 36 36"
+                  width="36"
+                  height="36"
+                  class="my-svg"
+                >
+                  <circle cx="18" cy="18" r="16" />
+                  <path
+                    d="M24.8906 18.846C24.5371 20.189 22.8667 21.138 19.5257 23.0361C16.296 24.8709 14.6812 25.7884 13.3798 25.4196C12.8418 25.2671 12.3516 24.9776 11.9562 24.5787C11 23.6139 11 21.7426 11 18C11 14.2574 11 12.3861 11.9562 11.4213C12.3516 11.0225 12.8418 10.7329 13.3798 10.5804C14.6812 10.2116 16.296 11.1291 19.5257 12.9639C22.8667 14.862 24.5371 15.811 24.8906 17.154C25.0365 17.7084 25.0365 18.2916 24.8906 18.846Z"
+                  />
+                </svg>
+              </div>
+              <img
+                src="https://i.scdn.co/image/ab67616100005174fc7c542c04b5f7dc8f1b1c16"
+                alt=""
+              />
+              <h3>Anirudh Playlist</h3>
+              <p>The very best in new music fro...</p>
+            </div>
+            <div data-folder="Vivek-Sagar" class="card">
+              <div class="play">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 36 36"
+                  width="36"
+                  height="36"
+                  class="my-svg"
+                >
+                  <circle cx="18" cy="18" r="16" />
+                  <path
+                    d="M24.8906 18.846C24.5371 20.189 22.8667 21.138 19.5257 23.0361C16.296 24.8709 14.6812 25.7884 13.3798 25.4196C12.8418 25.2671 12.3516 24.9776 11.9562 24.5787C11 23.6139 11 21.7426 11 18C11 14.2574 11 12.3861 11.9562 11.4213C12.3516 11.0225 12.8418 10.7329 13.3798 10.5804C14.6812 10.2116 16.296 11.1291 19.5257 12.9639C22.8667 14.862 24.5371 15.811 24.8906 17.154C25.0365 17.7084 25.0365 18.2916 24.8906 18.846Z"
+                  />
+                </svg>
+              </div>
+              <img
+                src="https://i.scdn.co/image/ab67616100005174dde0438e448e189892671b25"
+                alt=""
+              />
+              <h3>Vivek Sagar Playlist</h3>
+              <p>The very best in new music fro...</p>
+            </div>
+            <div data-folder="Yuvan" class="card">
+              <div class="play">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 36 36"
+                  width="36"
+                  height="36"
+                  class="my-svg"
+                >
+                  <circle cx="18" cy="18" r="16" />
+                  <path
+                    d="M24.8906 18.846C24.5371 20.189 22.8667 21.138 19.5257 23.0361C16.296 24.8709 14.6812 25.7884 13.3798 25.4196C12.8418 25.2671 12.3516 24.9776 11.9562 24.5787C11 23.6139 11 21.7426 11 18C11 14.2574 11 12.3861 11.9562 11.4213C12.3516 11.0225 12.8418 10.7329 13.3798 10.5804C14.6812 10.2116 16.296 11.1291 19.5257 12.9639C22.8667 14.862 24.5371 15.811 24.8906 17.154C25.0365 17.7084 25.0365 18.2916 24.8906 18.846Z"
+                  />
+                </svg>
+              </div>
+              <img
+                src="https://image-cdn-ak.spotifycdn.com/image/ab67706c0000da84aee28d90bdc264040c48fe47"
+                alt=""
+              />
+              <h3>Yuvan Playlist</h3>
+              <p>The very best in new music fro...</p>
+            </div>
+            <div data-folder="Manisharma" class="card">
+              <div class="play">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 36 36"
+                  width="36"
+                  height="36"
+                  class="my-svg"
+                >
+                  <circle cx="18" cy="18" r="16" />
+                  <path
+                    d="M24.8906 18.846C24.5371 20.189 22.8667 21.138 19.5257 23.0361C16.296 24.8709 14.6812 25.7884 13.3798 25.4196C12.8418 25.2671 12.3516 24.9776 11.9562 24.5787C11 23.6139 11 21.7426 11 18C11 14.2574 11 12.3861 11.9562 11.4213C12.3516 11.0225 12.8418 10.7329 13.3798 10.5804C14.6812 10.2116 16.296 11.1291 19.5257 12.9639C22.8667 14.862 24.5371 15.811 24.8906 17.154C25.0365 17.7084 25.0365 18.2916 24.8906 18.846Z"
+                  />
+                </svg>
+              </div>
+              <img
+                src="https://image-cdn-fa.spotifycdn.com/image/ab67706c0000da841f4ef6d157a32175539ce6ad"
+                alt=""
+              />
+              <h3>Manisharma Playlist</h3>
+              <p>The very best in new music fro...</p>
+            </div>
+          </div>
+          <div class="playbar">
+            <div class="seekBar">
+              <div class="circle"></div>
+            </div>
+
+            <div class="songinfo"></div>
+            <div class="songbuttons">
+              <img width="70" id="previous" src="./svg/previous.svg" alt="" />
+              <img width="70" id="play-pause" src="./svg/play.svg" alt="" />
+              <img width="70" id="next" src="./svg/next.svg" alt="" />
+            </div>
+            <div class="timeVol">
+              <div class="volumeRange">
+                <img class="invert volume" src="./svg/volume.svg" alt="" />
+                <input
+                  class="rangeField"
+                  type="range"
+                  name="volume"
+                  id="volumeControl"
+                />
+              </div>
+              <div class="songtime"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./script/script.js"></script>
+  </body>
+</html>
