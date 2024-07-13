@@ -19,3 +19,4 @@ This project is a simple web-based music player application built with HTML, CSS
 ## Setup Instructions
 
 1. **Clone the repository:**
+  git clone https://github.com/ganeshmedichelimala/spotify.git
